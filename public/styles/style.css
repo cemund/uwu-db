@@ -1,0 +1,124 @@
+:root {
+  --primary: #2e51a2;
+  --grey: #292929;
+}
+
+input {
+  background-color: var(--grey) !important;
+  border-color: var(--grey) !important;
+  color: white !important;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.maxw-1000 {
+  max-width: 600px;
+}
+
+.display-1 {
+  line-height: 60%;
+}
+
+.btn-search {
+  background-color: var(--grey);
+  color: var(--primary);
+}
+
+.btn-search:hover {
+  /* background-color: var(--primary); */
+  background-color: var(--grey);
+
+  color: white;
+}
+
+.btn-outline-info {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-info:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.ms-n5 {
+  margin-left: -40px;
+}
+
+.line {
+  width: 5px;
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+body {
+  background-color: #111111;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.anime-card {
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.noisy {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+  z-index: -1;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
